@@ -24,7 +24,7 @@ error_reporting(-1);
 |
 */
 
-if ( ! extension_loaded('mcrypt'))
+if ( ! function_exists('mcrypt_list_algorithms'))
 {
 	echo 'Mcrypt PHP extension required.'.PHP_EOL;
 
